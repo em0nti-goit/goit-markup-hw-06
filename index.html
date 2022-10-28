@@ -69,7 +69,9 @@
       <section class="section section-hero">
         <div class="container hero">
           <h1 class="page-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="btn main-btn" type="button" data-modal-open>Замовити послугу</button>
+          <button class="btn main-btn hero-btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -432,7 +434,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-column">
+        <div class="footer-column footer-social">
           <h2 class="footer-heading">Приєднуйтесь</h2>
           <ul class="list social-list">
             <li class="social-item">
@@ -464,6 +466,18 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-column footer-form">
+          <h2 class="footer-heading">Підпишіться на розсилку</h2>
+          <form class="footer-form" name="email-subscription" action="#" method="post">
+            <input class="footer-input" type="email" name="email" id="email" placeholder="Email"/>
+            <button class="btn main-btn footer-btn" type="submit">
+              <span>Підписатися</span>
+              <svg class="footer-btn-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

@@ -148,17 +148,14 @@ img {
   letter-spacing: 0.06em;
   color: var(--color-font-3-c);
 
-  padding: 10px 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   border: 0;
   border-radius: 4px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--color-brand-1);
-}
-
-.main-btn:active {
-  background-color: var(--color-btn-active);
 }
 
 /*----------  Social links  ----------*/
@@ -304,19 +301,23 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
 }
 
 .footer-heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--color-white);
 
   margin-bottom: 20px;
+}
+
+/*----------  Footer contacts  ----------*/
+
+.footer-contacts {
+  margin-right: 90px;
 }
 
 .footer-address {
@@ -348,11 +349,14 @@ img {
   color: var(--color-font-4-t);
 }
 
+/*----------  Footer social  ----------*/
+
 .footer-social-link {
   background-color: var(--color-white-opacity-1);
   color: var(--color-white);
 
-  transition: background-color var(--transition-duration) var(--transition-timing-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .footer-social-icon {
@@ -364,6 +368,48 @@ img {
   background-color: var(--color-brand-1);
 }
 
+/*----------  Footer form  ----------*/
+.footer-form {
+  margin-left: auto;
+}
+
+.footer-input {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--color-font-4-t);
+}
+
+.footer-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--color-font-4-t);
+}
+
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.footer-btn-icon {
+  fill: currentColor;
+}
 /*=====  End of Footer  ======*/
 
 /*=============================================
@@ -482,6 +528,15 @@ img {
   color: var(--color-font-3-c);
 }
 
+.hero-btn {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.hero-btn:active {
+  background-color: var(--color-btn-active);
+}
+
 /*----------  Features section  ----------*/
 
 .features-item {
@@ -546,7 +601,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--color-font-3-c);
@@ -592,7 +646,9 @@ img {
 .team-social-link {
   color: var(--color-site-gray-2);
 
-  transition: color var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function);
 }
 
 .team-social-icon {
@@ -624,7 +680,8 @@ img {
 
   color: var(--color-site-gray-2);
 
-  transition: color var(--transition-duration) var(--transition-timing-function), border-color var(--transition-duration) var(--transition-timing-function);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .clients-icon {
@@ -659,7 +716,8 @@ img {
 .portfolio-link {
   display: block;
 
-  transition: box-shadow var(--transition-duration) var(--transition-timing-function);
+  transition: box-shadow var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .portfolio-link:hover,
@@ -668,7 +726,7 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-link:is(:hover,:focus) .portfolio-overlay-card{
+.portfolio-link:is(:hover, :focus) .portfolio-overlay-card {
   transform: translateY(-100%);
 }
 
@@ -685,7 +743,10 @@ img {
 
   background-color: var(--color-site-2);
 
-  transition: color var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
 .btn-filter.active,
@@ -743,15 +804,13 @@ img {
 
   background-color: var(--color-brand-opacity);
 
-  transition: transform var(--transition-duration) var(--transition-timing-function);
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .portfolio-overlay-text {
   font-size: 18px;
   line-height: 1.56;
-  /* or 156% */
-
-  letter-spacing: 0.03em;
 
   color: var(--color-font-3-c);
 }

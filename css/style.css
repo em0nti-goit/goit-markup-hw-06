@@ -392,6 +392,10 @@ img {
   color: var(--color-font-4-t);
 }
 
+.footer-label {
+  display: block;
+}
+
 .footer-input::placeholder {
   font-size: 16px;
   line-height: 1.25;

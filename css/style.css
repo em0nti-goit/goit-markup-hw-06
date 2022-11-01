@@ -619,7 +619,7 @@ img {
 }
 
 .modal-form-checkbox:focus-visible + .modal-form-checkbox-icon, .modal-form-checkbox:checked:focus-visible + .modal-form-checkbox-icon {
-  box-shadow: 0 0 0 0.1em var(--color-black);
+  box-shadow: 0 0 6px var(--color-brand-opacity);
 }
 
 .modal-form-checkbox-icon {
